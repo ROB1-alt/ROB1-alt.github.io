@@ -124,7 +124,7 @@ div.slogan h1 strong {
 
 div.discoverIO {
   margin-left: 28vw;
-  margin-top: 10vh; }
+  margin-top: 7.4vh; }
 
 div.discoverIO h2 {
   color: #839bb6;
@@ -133,8 +133,8 @@ div.discoverIO h2 {
   margin: 0; }
 
 div.discoverIO img {
-  width: 300px;
-  height: 300px; }
+  width: 200px;
+  height: 200px; }
 
 div.slogan {
   z-index: 0;
@@ -159,7 +159,8 @@ div.anchors a:first-child {
   background-image: url(../images/hover.png);
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  transition: 0.3s; }
 
 div.anchors2 a:nth-child(1) {
   position: absolute;
@@ -170,7 +171,8 @@ div.anchors2 a:nth-child(1) {
   background-image: url(../images/hover.png);
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  transition: 0.3s; }
 
 div.anchors3 a:nth-child(1) {
   position: absolute;
@@ -181,7 +183,8 @@ div.anchors3 a:nth-child(1) {
   background-image: url(../images/hover.png);
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  transition: 0.3s; }
 
 div.anchors h3 {
   color: white;
@@ -215,7 +218,8 @@ div.anchors h3 p {
   font-size: 12px; }
 
 div.anchors a:nth-child(1):hover, div.anchors a:first-child:focus {
-  opacity: 0.8; }
+  opacity: 0.8;
+  transform: rotateZ(45deg); }
 
 div.anchors a:nth-child(1):hover + h3, div.anchors a:nth-child(1):focus + h3 {
   opacity: 1; }
@@ -234,6 +238,7 @@ div.secondSlide {
   background: linear-gradient(#e66465, #9198e5); }
 
 div.scrolldown2 {
+  z-index: 0;
   width: 3px;
   position: absolute;
   height: 200px;
@@ -328,7 +333,8 @@ div.fourthSliderimg h2:nth-child(4) {
   color: white;
   font-size: 140px;
   margin: 0;
-  margin-left: 11.5vw; }
+  margin-left: 11.5vw;
+  margin-bottom: 5vh; }
 
 div.fourthSliderimg h2:nth-child(4) strong {
   color: #02041d;
@@ -344,14 +350,68 @@ div.fourthSliderimg h2 strong:hover, div.fourthSliderimg h2 strong:focus {
 
 div.fourthSliderimg img {
   max-height: 92vh;
-  position: absolute; }
+  position: absolute;
+  transition: 0.5s; }
+
+div.globalImg4:hover img, div.globalImg4:focus img {
+  transform: rotateZ(5deg);
+  transition: 0.3s; }
+
+div.precommandeprix {
+  display: flex;
+  align-items: center;
+  margin-left: 19vw; }
+
+div.precommandeprix h3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25px; }
+
+div.precommandeprix h3 em {
+  text-decoration: line-through;
+  font-weight: normal;
+  color: grey; }
 
 div.fourthSliderimg a {
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 30px;
-  padding: 5px 20px 5px 20px; }
+  padding: 10px 40px 10px 40px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 1vw;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 45px; }
 
+a.goBackUp {
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 45px;
+  position: fixed;
+  right: 2vw;
+  bottom: 5vh;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+a.goBackUp img {
+  width: 30px;
+  height: 30px; }
+
+div.fourthSliderimg a:hover, div.fourthSliderimg a:focus, a.goBackUp:hover {
+  animation: animate 8s linear infinite; }
+
+@keyframes animate {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: 400%; } }
 /****** RESPONSIVE *****/
 @media screen and (max-aspect-ratio: 1679 / 873) {
   div.slogan h1 {
