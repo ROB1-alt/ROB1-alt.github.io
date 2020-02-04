@@ -132,6 +132,10 @@ div.discoverIO h2 {
   font-weight: bold;
   margin: 0; }
 
+div.discoverIO img {
+  width: 300px;
+  height: 300px; }
+
 div.slogan {
   z-index: 0;
   -webkit-animation: fadein 2s linear 1 normal forwards; }
@@ -187,7 +191,8 @@ div.anchors h3 {
   width: 300px;
   text-align: left;
   opacity: 0;
-  transition: 0.3s; }
+  transition: 0.3s;
+  text-shadow: 0 0 5px #02041d; }
 
 div.anchors3 h3 {
   text-align: right;
@@ -201,16 +206,18 @@ div.anchors2 h3 {
 
 div.anchors1 h3 {
   top: 67vh;
-  left: 66vw; }
+  left: 66vw;
+  color: #e0dfdc;
+  letter-spacing: .1em; }
 
 div.anchors h3 p {
   font-weight: normal;
   font-size: 12px; }
 
-div.anchors a:nth-child(1):hover {
+div.anchors a:nth-child(1):hover, div.anchors a:first-child:focus {
   opacity: 0.8; }
 
-div.anchors a:nth-child(1):hover + h3 {
+div.anchors a:nth-child(1):hover + h3, div.anchors a:nth-child(1):focus + h3 {
   opacity: 1; }
 
 div.scrolldown {
@@ -233,5 +240,182 @@ div.scrolldown2 {
   left: 27vw;
   top: 100vh;
   background: #FFF; }
+
+div.thirdSlide {
+  width: 100vw;
+  height: 20vh;
+  border-bottom: #0057b8 2vh solid; }
+
+/*** stars back ***/
+.stars, .twinkling, .clouds {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 20vh; }
+
+.stars {
+  z-index: 0;
+  background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top center; }
+
+.twinkling {
+  z-index: 1;
+  background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png") repeat top center;
+  animation: move-twink-back 200s linear infinite; }
+
+.clouds {
+  z-index: 2;
+  background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat top center;
+  animation: move-clouds-back 200s linear infinite; }
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 10000px 0; } }
+div.nasaPartnership {
+  width: 100vw;
+  height: 20vh;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+div.nasaPartnership img {
+  height: 80px; }
+
+div.nasaPartnership h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 40vw;
+  text-align: center; }
+
+div.fourthSlider {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+  background: #02041d; }
+
+div.fourthSliderimg {
+  padding-left: 20vw;
+  padding-top: 4vh;
+  height: 96vh;
+  background-image: url(../images/colordodge.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-position: center; }
+
+div.fourthSliderimg h2:nth-child(2) {
+  color: white;
+  font-size: 140px;
+  margin: 0;
+  margin-left: 5vw;
+  margin-top: 10vh; }
+
+div.fourthSliderimg h2:nth-child(3) {
+  color: white;
+  font-size: 140px;
+  margin: 0;
+  margin-left: 8.5vw; }
+
+div.fourthSliderimg h2:nth-child(4) {
+  color: white;
+  font-size: 140px;
+  margin: 0;
+  margin-left: 11.5vw; }
+
+div.fourthSliderimg h2:nth-child(4) strong {
+  color: #02041d;
+  font-size: 120px;
+  letter-spacing: .055em;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  transition: 0.3s; }
+
+div.fourthSliderimg h2 strong:hover, div.fourthSliderimg h2 strong:focus {
+  color: #FFF;
+  text-shadow: none;
+  cursor: pointer; }
+
+div.fourthSliderimg img {
+  max-height: 92vh;
+  position: absolute; }
+
+div.fourthSliderimg a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 30px;
+  padding: 5px 20px 5px 20px; }
+
+/****** RESPONSIVE *****/
+@media screen and (max-aspect-ratio: 1679 / 873) {
+  div.slogan h1 {
+    font-size: 9.5em; } }
+@media screen and (max-aspect-ratio: 17 / 9) {
+  div.slogan h1 {
+    font-size: 9em; }
+
+  div.anchors {
+    margin-left: 30px; }
+
+  div.firstSlideBrushes {
+    transform: translateX(-40px); } }
+@media screen and (max-aspect-ratio: 16 / 9) {
+  div.slogan h1 {
+    font-size: 9em; }
+
+  div.anchors {
+    margin-left: 60px; }
+
+  div.firstSlideBrushes {
+    transform: translateX(-80px); }
+
+  div.discoverIO img {
+    width: 200px;
+    height: 200px; }
+
+  div.discoverIO {
+    transform: translateX(-40px); } }
+@media screen and (max-aspect-ratio: 15 / 9) {
+  div.slogan h1 {
+    font-size: 9em; }
+
+  div.anchors {
+    margin-left: 90px; }
+
+  div.firstSlideBrushes {
+    transform: translateX(-120px); } }
+@media screen and (max-aspect-ratio: 907 / 872) {
+  div.slogan h1 {
+    font-size: 9em; }
+
+  div.anchors {
+    margin-left: 300px; }
+
+  div.anchors h3 {
+    text-align: right;
+    transform: translateX(-140px);
+    background: rgba(0, 0, 0, 0.5); }
+
+  div.slogan {
+    margin-top: 50px; }
+
+  div.discoverIO {
+    transform: translateX(-50px); }
+
+  div.discoverIO img {
+    width: 100px;
+    height: 100px; }
+
+  div.firstSlideBrushes {
+    transform: translateX(-180px); }
+
+  header > a {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
