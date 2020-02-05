@@ -62,7 +62,7 @@ div.headerButtons a{
   font-family: $font1;
   text-decoration: none;
   font-weight: bold;
-  padding: 2px 10px 2px 10px;
+  padding: 8px 20px 8px 20px;
   border-radius: 40px;
 }
 
@@ -74,7 +74,7 @@ div.headerButtons a:nth-child(1){
 div.headerButtons a:nth-child(2){
   padding-left: 32px;
   background-image: url(../images/shoppingcart_blue.png);
-  background-size: contain;
+  background-size: 25px;
   background-repeat: no-repeat;
   background-position: left 5px center;
 }
@@ -95,6 +95,7 @@ header>a{
   background-repeat: no-repeat;
   background-position: left;
   transition: 0.2s;
+  display: none;
 }
 
 header>a:hover{
@@ -424,8 +425,9 @@ div.secondSlideTitle{
 div.secondSlideTitle h2{
   margin: 0;
   font-family: $font1;
-  margin-top: 2.5vw;
-  font-size: 7.5vw;
+  margin-top: 5.5vw;
+  margin-right: 6vw;
+  font-size: 4vw;
   color: $color2;
 }
 
@@ -467,22 +469,6 @@ div.hoverings img{
   z-index: 8;
   animation: fader 5s ease infinite;
 }
-
-/*div.hoverings h3{
-  opacity: 1;
-  position: absolute;
-  width: 500px;
-  transform: rotateZ(75deg) translateX(-34.5vw) translateY(2vw);
-  font-family: $font1;
-  font-size: 35px;
-  text-align: center;
-  color: white;
-  transition: 0.3s;
-}
-
-a.invisibleButton:hover ~ h3, a.invisibleButton:focus ~ h3{
-  opacity: 1;
-}*/
 
 div.secondSlideText{
   width: 65vw;
@@ -650,7 +636,7 @@ div.secondSlideText p{
 
 div.thirdSlide{
   width: 100vw;
-  height: 20vh;
+  height: 50vh;
   border-bottom: $color1 2vh solid;
 }
 
@@ -663,7 +649,7 @@ div.thirdSlide{
   position: absolute;
 	display:block;
 	width:100vw;
-  height:20vh;
+  height:50vh;
 }
 
 .stars {
@@ -695,7 +681,7 @@ div.thirdSlide{
 
 div.nasaPartnership{
   width: 100vw;
-  height: 20vh;
+  height: 50vh;
   position: absolute;
   z-index: 3;
   display: flex;
@@ -846,69 +832,150 @@ div.fourthSliderimg a:hover, div.fourthSliderimg a:focus, a.goBackUp:hover{
   }
 }
 
-/****** RESPONSIVE *****/
 
-@media screen and(max-aspect-ratio: 1679/873){
-  div.slogan h1{
-    font-size: 9.5em;
-  }
-}
 
-@media screen and(max-aspect-ratio: 17/9){
-  div.slogan h1{
-    font-size: 9em;
+@media screen and (max-width: '1100px') {
+  img[src$='firstSlideFront.png']{
+    display: none;
   }
+
+  img[src$='firstSlideBack.png']{
+    display: none;
+  }
+
+  div.slogan h1{
+      font-size: 7em;
+      margin-left: 8%;
+  }
+
+  div.discoverIO{
+    left: 10vw;
+    top: 80vh;
+  }
+
   div.anchors{
-    margin-left: 30px;
-  }
-  div.firstSlideBrushes{
-    transform: translateX(-40px);
-  }
-}
-
-@media screen and(max-aspect-ratio: 16/9){
-  div.slogan h1{
-    font-size: 9em;
-  }
-  div.anchors{
-    margin-left: 60px;
-  }
-  div.firstSlideBrushes{
-    transform: translateX(-80px);
-  }
-}
-
-@media screen and(max-aspect-ratio: 15/9){
-  div.slogan h1{
-    font-size: 9em;
-  }
-  div.anchors{
-    margin-left: 90px;
-  }
-  div.firstSlideBrushes{
-    transform: translateX(-120px);
-  }
-}
-
-@media screen and(max-aspect-ratio: 907/872){
-  div.slogan h1{
-    font-size: 9em;
-  }
-  div.anchors{
-    margin-left: 300px;
-  }
-  div.anchors h3{
+    margin-left: 15vw;
     text-align: right;
-    transform: translateX(-140px);
-    background: rgba(0, 0, 0, .5);
+
   }
+
+  div.anchors3{
+    left: -12vw;
+  }
+
+  div.anchors3 h3{
+    text-align: left;
+    left: 55vw;
+  }
+
+  div.anchors2 h3{
+    left: 30vw;
+    text-align: right;
+    color: #e0dfdc;
+  }
+
+  div.anchors1 h3{
+    left: 30vw;
+    text-align: right;
+    color: #e0dfdc;
+  }
+  div.secondSlideText{
+    top: 35vh;
+  }
+  div.globalImg4 img{
+    transform: translateX(-15vw);
+  }
+  div.fourthSliderimg h2{
+    font-size: 100px !important;
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width: 480px) {
+  div.discoverIO{
+    left: 60vw;
+    top: 20vh;
+    width: 25vw;
+    height: 35.5vw;
+  }
+
+  div.slogan h1{
+        font-size: 10em;
+        margin-left: 4%;
+  }
+
   div.slogan{
     margin-top: 50px;
   }
-  div.firstSlideBrushes{
-    transform: translateX(-180px);
+
+  div.nasaPartnership{
+    height: 20vh;
   }
-  header > a{
+
+  .stars, .twinkling, .clouds {
+    height: 20vh;
+  }
+
+  div.thirdSlide{
+    height: 20vh;
+  }
+
+  div.fourthSlider{
+    height: 85vh;
+  }
+
+  div.fourthSliderimg{
+    height: 76vh;
+  }
+
+  div.fourthSliderimg h2{
+    padding-left: 5vw;
+  }
+
+  div.precommandeprix h3{
     display: none;
   }
+
+  div.precommandeprix a{
+    margin-left: 20vw;
+  }
+
+  div.globalImg4:hover img, div.globalImg4:focus img{
+    transform: rotateZ(0deg);
+  }
+
+  div.brushAnimation img{
+    width: 140%;
+    height: 140%;
+    top: 30vw;
+    display: none;
+  }
+
+  div.brushAnimation img:first-child{
+    display: block;
+    width: 120%;
+    height: 120%;
+    margin-top: 90vw;
+    transform: translateX(-20vw);
+  }
+
+  div.secondSlideText{
+    top: 15vh;
+  }
+
+  div.secondSlideArticle h3{
+    font-size: 2vw;
+  }
+
+  div.secondSlide{
+    height: 40vh;
+  }
 }
+
+
+/*******
+
+CARACTERISTICS PAGE
+
+********/
