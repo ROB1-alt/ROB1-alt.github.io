@@ -307,7 +307,7 @@ div.discoverIO {
   left: 20vw;
   top: 70vh;
   padding-left: 10px;
-  border-left: 3px #FFF solid;
+  border-left: 3px #F0F0F0 solid;
   position: absolute;
   z-index: 7;
   animation: slideUp 2.3s ease; }
@@ -652,14 +652,14 @@ div.fourthSliderimg a {
   font-weight: bold;
   text-decoration: none;
   margin-left: 1vw;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4);
   background-size: 400%;
   border-radius: 45px; }
 
 a.goBackUp {
   height: 50px;
   width: 50px;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4);
   background-size: 400%;
   border-radius: 45px;
   position: fixed;
@@ -912,8 +912,7 @@ input:focus {
 .ccv {
   width: 50px;
   margin-top: -5px;
-  font-size: 15px;
-   }
+  font-size: 15px; }
 
 /***** NEWSLETTER POPUP *******/
 .modal {
@@ -921,7 +920,7 @@ input:focus {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 99;
   /* Sit on top */
   padding-top: 300px;
   /* Location of the box */
@@ -1031,6 +1030,7 @@ div.phoneContainer {
     background-image: url(../images/backgroundIphoneNone.jpg); } }
 div.phoneContainer div.fifthSlideText1 {
   width: 40vw;
+  background: #ececec;
   background-image: url(../images/backgroundBluetooth.jpg);
   background-position: right;
   background-size: contain;
@@ -1105,6 +1105,7 @@ body#bodyCaracteristics {
 div.fifthContainer2 div.fifthSlideText2 {
   width: 40vw;
   margin-left: 20vw;
+  background: #d2d2d2;
   background-image: url(../images/backgroundHealth.jpg);
   background-position: left;
   background-size: contain;
@@ -1124,6 +1125,100 @@ footer {
   height: 20vh;
   width: 100vw;
   background: #0057b8; }
+
+div.topFooter {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+div.footerOralbLogo {
+  width: 300px;
+  height: 60px;
+  display: flex; }
+
+div.footerOralbLogo a {
+  background-image: url(../images/oralbiologo.jpg);
+  width: 200px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+div.footerOralbLogo a:hover {
+  opacity: .7; }
+
+div.footerContactUs {
+  width: 300px;
+  display: flex;
+  justify-content: flex-end; }
+
+div.footerContactUs a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: bold; }
+
+div.footerContactUs a:hover {
+  opacity: .8; }
+
+div.underFooter {
+  width: 100vw;
+  height: 10vh;
+  background: #0343a2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+div.underFooter div.mentionsLegales {
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  justify-content: space-between; }
+
+div.mentionsLegales a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: .9em;
+  text-decoration: none; }
+
+div.mentionsLegales a:hover {
+  text-decoration: underline; }
+
+div.mentionsLegales p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: .9em; }
+
+div.underFooter div.reseaux {
+  width: 150px;
+  display: flex;
+  justify-content: space-between; }
+
+div.reseaux a:nth-child(1) {
+  background-image: url(../images/twitter_white.png);
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+div.reseaux a:nth-child(2) {
+  background-image: url(../images/youtube_white.png);
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+div.reseaux a:nth-child(3) {
+  background-image: url(../images/facebook_white.png);
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+div.reseaux a:hover {
+  opacity: .7; }
 
 @media screen and (max-width: 1100px) {
   img[src$='firstSlideFront.png'] {
