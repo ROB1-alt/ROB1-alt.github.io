@@ -12,3 +12,4 @@ Third commit, entire homepage completed. Animations added.
 06/02/2020
 Fourth commit, last day of the project. All links were made functional, Completion of the 3 pages of the website and creation of a popup for the newsletter subscription.
 
+dev fav: https://github.com/Leotheluck
