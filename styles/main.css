@@ -91,8 +91,7 @@ MAIN
 div.firstSlide {
   height: 95vh;
   background: #02041d;
-  overflow: hidden;
-  border-bottom: #0057b8 1vh solid; }
+  overflow: hidden; }
 
 div.firstSlideBrushes {
   display: flex;
@@ -304,7 +303,7 @@ div.discoverIO {
   justify-content: flex-start;
   flex-flow: column;
   width: 18vw;
-  height: 25.5vw;
+  height: 20vw;
   left: 20vw;
   top: 70vh;
   padding-left: 10px;
@@ -520,8 +519,7 @@ div.secondSlideText p {
 /****** Third Slide (nasa) ******/
 div.thirdSlide {
   width: 100vw;
-  height: 50vh;
-  border-bottom: #0057b8 2vh solid; }
+  height: 50vh; }
 
 /*** stars back ***/
 .stars, .twinkling, .clouds {
@@ -582,7 +580,7 @@ div.fourthSliderimg {
   padding-left: 20vw;
   padding-top: 4vh;
   height: 96vh;
-  background-image: url(../images/colordodge.png);
+  background-image: url(../images/colordodge.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
@@ -688,7 +686,7 @@ div.secondPage {
   height: 98vh;
   padding-top: 2vh;
   width: 100vw;
-  background-image: url(../images/colordodge.png);
+  background-image: url(../images/colordodge.jpg);
   display: flex;
   justify-content: center;
   background-repeat: no-repeat;
@@ -915,6 +913,216 @@ input:focus {
   width: 50px;
   margin-top: -5px;
   font-size: 15px; }
+
+/***** NEWSLETTER POPUP *******/
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 300px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+/* Modal Content */
+.modal-content {
+  background-color: #02041d;
+  margin: auto;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #888;
+  width: 80%; }
+
+/* The Close Button */
+.close {
+  color: #FFF;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #dbdce0;
+  text-decoration: none;
+  cursor: pointer; }
+
+.newsletterForm label {
+  height: 30px;
+  color: white; }
+
+.modal-content h2 {
+  text-align: center;
+  color: #dbdce0;
+  margin: 0;
+  font-family: "Roboto", sans-serif; }
+
+.modal-content p {
+  text-align: center;
+  color: grey;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 40px; }
+
+.modal-content h3 {
+  color: #dbdce0;
+  margin-top: 0;
+  font-family: "Roboto", sans-serif; }
+
+.newsletterForm input {
+  font-size: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width: 400px; }
+
+.newsletterForm input:focus {
+  font-size: 20px;
+  border-bottom: 1px solid #1abc9c; }
+
+.newsletterForm button.proceed {
+  margin: 0 auto;
+  transform: translate(0); }
+
+button[type^='sendNewsletter'] {
+  background: #1abc9c;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 2px 20px 2px 20px;
+  color: #FFF;
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 32px; }
+
+button[type^='sendNewsletter']:hover {
+  background: #117790;
+  cursor: pointer; }
+
+/****** CARACTERISTICS PAGES ******/
+div.fifthSlide {
+  height: 100vh;
+  width: 100vw;
+  background: #ececec; }
+
+div.phoneContainer {
+  height: 50vh;
+  width: 100vw;
+  background-image: url(../images/backgroundIphoneNone.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: animateWP 10s ease infinite;
+  overflow: hidden; }
+
+@keyframes animateWP {
+  15% {
+    background-image: url(../images/backgroundIphoneNone.jpg); }
+  50% {
+    background-image: url(../images/backgroundIphoneApp.jpg); }
+  85% {
+    background-image: url(../images/backgroundIphoneNone.jpg); } }
+div.phoneContainer div.fifthSlideText1 {
+  width: 40vw;
+  background-image: url(../images/backgroundBluetooth.jpg);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 40vw;
+  margin-right: 20vw;
+  height: 50vh;
+  transition: 0.3s;
+  border-radius: 40px;
+  box-shadow: 9px 0px 23px 3px #a3a3a3, -9px 0px 23px 0px white; }
+
+div.phoneContainer:hover div.fifthSlideText1 {
+  margin-left: 38vw; }
+
+div.fifthSlide h2 {
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  padding-top: 35px;
+  margin: 0;
+  padding-left: 1vw;
+  padding-right: 1vw; }
+
+div.fifthSlide p {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding-left: 1vw;
+  padding-right: 1vw; }
+
+div.ultraFifth2 {
+  width: 100vw;
+  height: 50vh;
+  background: #d2d2d2; }
+
+div.fifthContainer2 {
+  height: 50vh;
+  width: 100vw;
+  background-image: url(../images/brushCaseOpen.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  animation: animateWP2 ease 10s infinite;
+  animation-delay: 5s;
+  overflow: hidden; }
+
+div.fifthSlideText1 a {
+  margin-left: 1vw;
+  color: #FFF;
+  background: #0057b8;
+  padding: 5px 20px 5px 20px;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  /*box-shadow: 4px 4px 12px 1px rgba(150,150,150,1), -2px -2px 12px 1px rgba(255,255,255,1);*/ }
+
+div.fifthSlideText1 a:hover {
+  background: #05358e; }
+
+body#bodyCaracteristics {
+  background: #02041d; }
+
+@keyframes animateWP2 {
+  15% {
+    background-image: url(../images/brushCaseOpen.jpg); }
+  50% {
+    background-image: url(../images/brushCaseClosed.jpg); }
+  85% {
+    background-image: url(../images/brushCaseOpen.jpg); } }
+div.fifthContainer2 div.fifthSlideText2 {
+  width: 40vw;
+  margin-left: 20vw;
+  background-image: url(../images/backgroundHealth.jpg);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 40vw;
+  height: 50vh;
+  transition: 0.3s;
+  overflow: hidden;
+  border-radius: 40px;
+  box-shadow: 9px 0px 23px 3px #5e5e5e, -9px 0px 23px 0px white; }
+
+div.fifthContainer2:hover div.fifthSlideText2 {
+  margin-left: 18vw; }
+
+/***** FOOTER *****/
+footer {
+  height: 20vh;
+  width: 100vw;
+  background: #0057b8; }
 
 @media screen and (max-width: 1100px) {
   img[src$='firstSlideFront.png'] {

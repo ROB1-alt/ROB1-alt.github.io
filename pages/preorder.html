@@ -2,10 +2,9 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Projet iO / Oral B. (Caractéristiques)</title>
+    <title>Projet iO / Oral B. (Précommande)</title>
     <meta name="description" content="Découvrez la nouvelle brosse à dents Oral-B iO, présentée au CES 2020 à Las Vegas">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="shortcut icon" href="../images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
@@ -19,7 +18,7 @@
         <a href="#"> <img src="../images/logo_blue.png" alt=""> </a>
       </div>
       <div class="headerSubscription">
-        <a href="#">S'inscrire à la newsletter</a>
+        <a id="newsletter" href="#">S'inscrire à la newsletter</a>
       </div>
     </header>
     <main>
@@ -72,5 +71,36 @@
         </div>
       </div>
     </main>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Inscription à la newsletter Oral-B</h2>
+        <p>Soyez au courant des dernières nouveautés concernant la Oral-B iO, et soyez notifiés lors de sa sortie !</p>
+        <form class="newsletterForm" action="newsletter.php" method="post">
+          <h3>Veuillez spécifier votre adresse email</h3>
+          <input type="text" name="" placeholder="example@mail.com">
+          <button type="sendNewsletter" name="newsletter">Valider</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("newsletter");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
   </body>
 </html>

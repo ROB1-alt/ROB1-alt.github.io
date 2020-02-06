@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Projet iO / Oral B. (Accueil)</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="description" content="Découvrez la nouvelle brosse à dents Oral-B iO, présentée au CES 2020 à Las Vegas">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/favicon.png">
@@ -18,7 +17,7 @@
       </div>
       <a target="_blank" href="https://twitter.com/intent/tweet?text=Je&nbsp;rejoins&nbsp;le&nbsp;mouvement&nbsp;OralB-iO&nbsp;!">Rejoignez le mouvement #OralB-iO</a>
       <div class="headerButtons">
-        <a href="#">S'inscrire à la newsletter</a>
+        <a id="newsletter" href="#">S'inscrire à la newsletter</a>
         <a href="pages/preorder.html">Précommander</a>
       </div>
     </header>
@@ -55,45 +54,23 @@
           </div>
         </div>
       </div>
-      <div class="secondSlide">
-        <div class="secondSlideTitle">
-          <h2>Un concentré de technologie.</h2>
-        </div>
-        <div class="secondSlideContent">
-          <div class="secondSlideBrush">
-            <img src="images/oralbnoire.png" alt="">
-            <div class="hoverings">
-              <img src="images/processeur.png" alt="">
-            </div>
-          </div>
-          <div class="secondSlideText">
-            <div class="secondSlideArticle toothbrushHeadText">
-              <h3>Confort optimal</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            <div class="secondSlideArticle toothbrushBodyText">
-              <h3>Écran OLED</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            <div class="secondSlideArticle toothbrushBottomText">
-              <h3>Longue Batterie</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
+      <div class="fifthSlide">
+        <div class="phoneContainer">
+          <div class="fifthSlideText1">
+            <h2>Connectée plus que jamais.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="pages/caracteristics.html">Caractéristiques techniques</a>
           </div>
         </div>
-        <div class="area">
-          <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+        <div class="ultraFifth2">
+          <div class="fifthContainer2">
+            <div class="fifthSlideText2">
+              <h2>Un vrai outil de santé.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="thirdSlide">
@@ -123,5 +100,44 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div class="mentionsLegales">
+
+      </div>
+      <div class="reseaux">
+        <a href="pages/caracteristics.html">Caractéristiques détaillées là</a>
+      </div>
+    </footer>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Inscription à la newsletter Oral-B</h2>
+        <p>Soyez au courant des dernières nouveautés concernant la Oral-B iO, et soyez notifiés lors de sa sortie !</p>
+        <form class="newsletterForm" action="newsletter.php" method="post">
+          <h3>Veuillez spécifier votre adresse email</h3>
+          <input type="text" name="" placeholder="example@mail.com">
+          <button type="sendNewsletter" name="newsletter">Valider</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("newsletter");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
   </body>
 </html>
