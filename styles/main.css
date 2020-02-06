@@ -912,7 +912,8 @@ input:focus {
 .ccv {
   width: 50px;
   margin-top: -5px;
-  font-size: 15px; }
+  font-size: 15px;
+   }
 
 /***** NEWSLETTER POPUP *******/
 .modal {
