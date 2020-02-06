@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Projet iO / Oral B. (Caractéristiques)</title>
+    <meta name="description" content="Découvrez la nouvelle brosse à dents Oral-B iO, présentée au CES 2020 à Las Vegas">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="headerButtonsPreorder">
+        <a href="../index.html">Retour</a>
+      </div>
+      <div class="headerLogo">
+        <a href="#"> <img src="../images/logo_blue.png" alt=""> </a>
+      </div>
+      <div class="headerSubscription">
+        <a href="#">S'inscrire à la newsletter</a>
+      </div>
+    </header>
+    <main>
+      <div class="secondPage">
+        <div class="productSelector">
+          <div class="colorSelector">
+            <a href="#"></a>
+            <img src="../images/productSelectorBlack.png" alt="">
+            <a href="#"></a>
+            <img src="../images/productSelectorWhite.png" alt="">
+            <a href="#"></a>
+            <img src="../images/productSelectorRose.png" alt="">
+            <a href="#"></a>
+            <img src="../images/productSelectorPurple.png" alt="">
+          </div>
+          <h2>Choisissez votre coloris*</h2>
+        </div>
+        <div class="payment">
+          <h1>Oral-B iO</h1>
+          <h2>Précommande pour le 20 août 2020</h2>
+          <form class="topperForm" action="order.php" method="post">
+            <label>Prénom, Nom*</label>
+            <input id="user" type="text" placeholder="Dupont & Dupond">
+            <label>Adresse (ligne 1)*</label>
+            <input id="user" type="text" placeholder="Moulinsart">
+            <label>Adresse (ligne 2)</label>
+            <input id="user" type="text" placeholder="">
+            <label>Ville*</label>
+            <input id="user" type="text" placeholder="Paris">
+            <label>Code postal*</label>
+            <input id="user" type="text" placeholder="75000">
+            <label>Pays*</label>
+            <input id="user" type="text" placeholder="France">
+            <label>Numéro de téléphone</label>
+            <input id="user" type="text" placeholder="(+33)">
+          </form>
+          <h1>Prix : 174.99€</h1>
+          <div class="card">
+             <button class="proceed"><svg class="sendicon" width="24" height="24" viewBox="0 0 24 24">
+             <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+             </svg></button>
+             <img src="https://seeklogo.com/images/V/VISA-logo-62D5B26FE1-seeklogo.com.png" class="logo-card">
+             <label>Numéro de carte:</label>
+             <input id="user" type="text" class="input cardnumber"  placeholder="XXXX-XXXX-XXXX-XXXX">
+             <label>Nom:</label>
+             <input class="input name"  placeholder="Prénom Nom">
+             <label class="toleft">CVV:</label>
+             <input class="input toleft ccv" placeholder="123">
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
