@@ -574,7 +574,8 @@ div.fourthSlider {
   height: 100vh;
   width: 100vw;
   font-family: "Roboto", sans-serif;
-  background: #02041d; }
+  background: #02041d;
+  overflow: hidden; }
 
 div.fourthSliderimg {
   padding-left: 20vw;
@@ -1235,26 +1236,11 @@ div.reseaux a:hover {
     left: 10vw;
     top: 80vh; }
 
-  div.anchors {
-    margin-left: 15vw;
-    text-align: right; }
+  div.anchors, div.anchors a, div.anchors h3 {
+    display: none; }
 
-  div.anchors3 {
-    left: -12vw; }
-
-  div.anchors3 h3 {
-    text-align: left;
-    left: 55vw; }
-
-  div.anchors2 h3 {
-    left: 30vw;
-    text-align: right;
-    color: #e0dfdc; }
-
-  div.anchors1 h3 {
-    left: 30vw;
-    text-align: right;
-    color: #e0dfdc; }
+  div.area {
+    display: none; }
 
   div.secondSlideText {
     top: 35vh; }
@@ -1327,19 +1313,9 @@ div.reseaux a:hover {
   div.secondSlide {
     height: 40vh; }
 
-  div.anchors {
-    margin-left: 0; }
-
-  div.anchors1 {
-    margin-top: 23vw; }
-
-  div.anchors2 {
-    margin-left: 3vw;
-    margin-top: 81vw; }
-
-  div.anchors3 {
-    margin-left: -2vw;
-    margin-top: 5vw; }
+  div.anchors, div.anchors a, div.anchors h3 {
+    display: none;
+    animation: none; }
 
   div.area {
     display: none; } }

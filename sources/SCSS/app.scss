@@ -712,6 +712,7 @@ div.fourthSlider{
   width: 100vw;
   font-family: $font1;
   background: $color3;
+  overflow: hidden;
 }
 
 div.fourthSliderimg{
@@ -1434,31 +1435,12 @@ div.reseaux a:hover{
     top: 80vh;
   }
 
-  div.anchors{
-    margin-left: 15vw;
-    text-align: right;
-
+  div.anchors, div.anchors a, div.anchors h3{
+    display: none;
   }
 
-  div.anchors3{
-    left: -12vw;
-  }
-
-  div.anchors3 h3{
-    text-align: left;
-    left: 55vw;
-  }
-
-  div.anchors2 h3{
-    left: 30vw;
-    text-align: right;
-    color: #e0dfdc;
-  }
-
-  div.anchors1 h3{
-    left: 30vw;
-    text-align: right;
-    color: #e0dfdc;
+  div.area{
+    display: none;
   }
   div.secondSlideText{
     top: 35vh;
@@ -1553,22 +1535,9 @@ and (max-device-width: 480px) {
     height: 40vh;
   }
 
-  div.anchors{
-    margin-left: 0;
-  }
-
-  div.anchors1{
-    margin-top: 23vw;
-  }
-
-  div.anchors2{
-    margin-left: 3vw;
-    margin-top: 81vw;
-  }
-
-  div.anchors3{
-    margin-left: -2vw;
-    margin-top: 5vw;
+  div.anchors, div.anchors a, div.anchors h3{
+    display: none;
+    animation: none;
   }
 
   div.area{
